@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    font-weight: 400;
+    src: url('../fonts/NotoKufiArabic-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Noto Kufi Arabic';
+    font-weight: 700;
+    src: url('../fonts/NotoKufiArabic-Bold.woff2') format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tabler Icons';
+    src: url('../fonts/tabler-icons.woff2') format('woff2');
+    font-display: swap;
+}
+
+body{
+    font-family: 'Noto Kufi Arabic';
+    font-weight: 400;
+}
+
+::selection {
+    background-color: #4C246E;
+    color: white; 
+}
+
+
+::-webkit-selection {
+    background-color: #4C246E;
+    color: white; 
+}
+
+.bg-purple{
+    background: #4C246E !important;
+}
+
+.text-purple{
+    color: #4C246E;
+}
+
+/* Override default container sizes with a slight decrease */
+
+/* For xs (extra small) - full width */
+.container {
+    max-width: 100%;
+}
+
+/* For sm (small) - decrease width */
+@media (min-width: 576px) {
+    .container {
+        max-width: calc(540px - 12%); /* Decrease small container size */
+    }
+}
+
+/* For md (medium) - decrease width */
+@media (min-width: 768px) {
+    .container {
+        max-width: calc(720px - 12%); /* Decrease medium container size */
+    }
+}
+
+/* For lg (large) - decrease width */
+@media (min-width: 992px) {
+    .container {
+        max-width: calc(960px - 12%); /* Decrease large container size */
+    }
+}
+
+/* For xl (extra large) - decrease width */
+@media (min-width: 1200px) {
+    .container {
+        max-width: calc(1140px - 12%); /* Decrease extra large container size */
+    }
+}
+
+/* For xxl (extra extra large) - decrease width */
+@media (min-width: 1400px) {
+    .container {
+        max-width: calc(1320px - 12%); /* Decrease extra extra large container size */
+    }
+}
+
+
+
+/*----------- main css items ------------*/
+
+.main-nav{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.12);
+}
+
+.main-nav ul li a{
+    font-weight: 600;
+    font-family: noto kufi arabic,sans-serif;
+}
+
+/* Style for the input group */
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for rounded input */
+.rounded-input {
+    border-radius: 25px; /* Adjust for more or less rounding */
+    border: 1px solid #ddd; /* Light grey border color */
+    padding: 6px; /* Adjust padding for more space inside */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    outline: none; /* Remove default outline */
+    padding-right: 9px;
+}
+
+/* Style for input focus state */
+.rounded-input:focus {
+    border-color: #ccc; /* Light grey color on focus */
+    box-shadow: none; /* Remove default blue box-shadow on focus */
+}
+
+/* Style for the search button */
+.rounded-input + .btn {
+    border-radius: 25px; /* Match the border radius of the input */
+    border: 1px solid #ddd; /* Light grey border color */
+    background-color: #fff; /* White background color */
+    margin-left: -1px; /* Remove double borders between input and button */
+    display: flex;
+    align-items: center;
+}
+
+.form-control::placeholder {
+    font-family: noto kufi arabic,sans-serif; /* Change font family */
+}
+
+/* Button icon styling */
+.btn i {
+    color: #333; /* Dark color for the icon */
+    transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+/* Icon color on button hover */
+.btn:hover svg {
+    color: #333 !important; /* Maintain the same color on hover */
+}
+
+/*----------- end main css items ------------*/
+
+
+
+.small-gray-divider{
+    display: inline-block;
+    width: 100px;
+    border-top: 1px solid #b6b6b6;
+}
+
+.icon-tabler-scissors {
+    transition: stroke 0.3s ease; /* Smooth transition */
+    stroke: #fff; /* Default color */
+}
+
+.icon-tabler-scissors:hover {
+    stroke: #fff !important; /* Force color on hover */
+}
+
+.newsletter-form input:focus{
+    box-shadow: none;
+}
+
+
+
+
+.store-ext-btn {
+    border-color: #adadad; 
+    color: #adadad;
+}
+
+.store-ext-btn:hover {
+    border-color: #d6d6d6; 
+    color: #d6d6d6;
+}
+
+/* Remove hover effects on the SVG */
+.store-ext-btn svg.icon-tabler {
+    transition: none;
+}
+
+.store-ext-btn:hover svg.icon-tabler {
+    stroke: #adadad; /* Keep the same stroke color on hover */
+}
+
+
+
+
+.search-bar .custom-input {
+    border-color: #e5e5e5 !important; /* Light border color */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.search-bar .custom-input:focus {
+    border-color: #666666 !important; /* Darker border color when focused */
+    box-shadow: none; /* Remove the default Bootstrap box shadow */
+}
+
+
+
+.pagination {
+    justify-content: center; /* Center the pagination */
+}
+
+.pagination .page-link {
+    color: #4C246E; /* Change the pagination link color */
+}
+
+.pagination .page-link:hover {
+    color: #4C246E; /* Keep the color the same on hover */
+}
+
+
+
+.c-f .form-control:focus {
+    border-color: #4C246E;
+    box-shadow: 0 0 0 0.25rem rgba(76, 36, 110, 0.25);
+}
+
+.c-f .btn-custom {
+    background-color: #4C246E;
+    border-color: #4C246E;
+}
+
+.c-f .btn-custom:hover {
+    background-color: #3B1D58;
+    border-color: #3B1D58;
+}
+
+
+
+
+
+/* Ensure Select2 container uses full width */
+.select2-container {
+    width: 100% !important;
+}
+
+/* Adjust Select2 dropdown height */
+.select2-container--default .select2-selection--single {
+    height: 100% !important;
+    line-height: 2.5; /* Adjust line-height to better fit the height */
+}
+
+/* Adjust Select2 selection area */
+.select2-container--default .select2-selection__rendered {
+    padding: .375rem .75rem; /* Adjust padding if needed */
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100% !important; /* Ensure arrow matches height */
+}
+
+
