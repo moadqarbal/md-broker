@@ -3,7 +3,7 @@
     <div class="show-single">
         <div class="container">
 
-            <main class="single-container p-4 mt-4 mb-5 border border-light">
+            <main class="single-container p-4 mt-4 mb-5 border border-light rounded">
                 <div class="row gallery mt-4">
                     <div class="col-md-12">
                         <div class="main-slider bg-success mb-5 rounded" style="overflow: hidden;">
@@ -77,7 +77,7 @@
                             <img src="{{ asset('storage/img1.jpg') }}" style="width: 50px; height: 50px; border-radius: 50%" alt="">
                             <div class="ms-3">
                                 <h5 class="fs-6 fw-semibold mb-1">LUXURIOUS SUITES HO</h5>
-                                <span class="badge bg-purple">إستكشاف المتجر</span>
+                                <span class="badge bg-purple"> البائع</span>
                             </div>
                         </div>                        
                     </div>
@@ -231,7 +231,35 @@
                             <h6 class="mt-2 fw-semibold">مطبخ مجهز</h6>
                         </div>
                     </div>
-                    
+                </div>
+
+                <hr style="border-color: #E7E7E8;" class="my-4">
+
+                <div class="row adress-map">
+                    <div class="col-md-12">
+                        <div class="listing-map">
+                            <h3 class="fw-bold mb-3"> عنوان</h3>
+                            <p>
+                                عين الشق
+                            </p>
+                            <iframe class="mt-4 w-100" style="height: 450px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6651.327204939282!2d-7.575812190771086!3d33.53613082163289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda6330036057389%3A0xcbae98b1e28f759a!2z2YXZhtiq2LLZhyDYs9io2KfYqtip!5e0!3m2!1sen!2sma!4v1725353316419!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>                        
+                    </div>
+                </div>
+
+                <hr style="border-color: #E7E7E8;" class="my-4">
+
+                <div class="row mt-3">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <div class="admin-private-phn">
+                            <span class="fw-semibold">الهاتف :</span> <a href="tel:+212654578796" class="text-purple">0654578796</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="admin-private-adress">
+                            <span class="fw-semibold">عنوان</span> : حي الأمان زنقة 7 رقم الدار 5
+                        </div>
+                    </div>
                 </div>
                 
             </main>

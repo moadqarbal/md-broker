@@ -42,6 +42,9 @@ body{
     color: #4C246E;
 }
 
+
+
+
 /* Override default container sizes with a slight decrease */
 
 /* For xs (extra small) - full width */
@@ -148,6 +151,7 @@ body{
 
 
 
+/*----------- begin icons edits ------------*/
 .small-gray-divider{
     display: inline-block;
     width: 100px;
@@ -166,10 +170,11 @@ body{
 .newsletter-form input:focus{
     box-shadow: none;
 }
+/*----------- end icons edits ------------*/
 
 
 
-
+/*----------- begin store sections ------------*/
 .store-ext-btn {
     border-color: #adadad; 
     color: #adadad;
@@ -188,10 +193,11 @@ body{
 .store-ext-btn:hover svg.icon-tabler {
     stroke: #adadad; /* Keep the same stroke color on hover */
 }
+/*----------- end store sections ------------*/
 
 
 
-
+/*----------- begin search bar ------------*/
 .search-bar .custom-input {
     border-color: #e5e5e5 !important; /* Light border color */
     transition: border-color 0.3s; /* Smooth transition for border color */
@@ -201,9 +207,10 @@ body{
     border-color: #666666 !important; /* Darker border color when focused */
     box-shadow: none; /* Remove the default Bootstrap box shadow */
 }
+/*----------- end search bar ------------*/
 
 
-
+/*----------- begin pagination bar ------------*/
 .pagination {
     justify-content: center; /* Center the pagination */
 }
@@ -215,9 +222,10 @@ body{
 .pagination .page-link:hover {
     color: #4C246E; /* Keep the color the same on hover */
 }
+/*----------- end pagination bar ------------*/
 
 
-
+/*----------- begin form styling ------------*/
 .c-f .form-control:focus {
     border-color: #4C246E;
     box-shadow: 0 0 0 0.25rem rgba(76, 36, 110, 0.25);
@@ -232,7 +240,7 @@ body{
     background-color: #3B1D58;
     border-color: #3B1D58;
 }
-
+/*----------- end form styling ------------*/
 
 
 
@@ -256,5 +264,6 @@ body{
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     height: 100% !important; /* Ensure arrow matches height */
 }
+
 
 

@@ -18,10 +18,41 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'first_name',
+        'last_name',
+        'username',
         'email',
         'password',
+        'phone',
+        'whatsapp_number',
+        'bio',
+        'user_image',
+        'facebook',
+        'instagram',
+        'role',
     ];
+
+    public function scopeFilter($query, array $filters)
+    {
+        if ($filters['searchuser'] ?? false) {
+            $searchTerm = $filters['searchuser'];
+
+            $query->where(function ($query) use ($searchTerm) {
+                $query->where('first_name', 'like', '%' . $searchTerm . '%')
+                    ->orWhere('last_name', 'like', '%' . $searchTerm . '%')
+                    ->orWhere('email', 'like', '%' . $searchTerm . '%')
+                    ->orWhere('username', 'like', '%' . $searchTerm . '%')
+                    ->orWhere('phone', 'like', '%' . $searchTerm . '%');
+            });
+        }
+    }
+
+
+
+    public function permissions()
+    {
+        return $this->belongsToMany(Permission::class, 'user_permission');
+    }
 
     /**
      * The attributes that should be hidden for serialization.
